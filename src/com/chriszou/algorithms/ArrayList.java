@@ -1,6 +1,10 @@
 package com.chriszou.algorithms;
 
-public class ArrayList<E> {
+import java.util.Iterator;
+
+import javax.naming.OperationNotSupportedException;
+
+public class ArrayList<E> implements Iterable<E> {
 
 	/**
 	 * Default container size
@@ -17,7 +21,6 @@ public class ArrayList<E> {
 		mElemments = (E[]) new Object[DEFAULT_SIZE];
 		mSize = 0;
 	}
-	
 	
 	public int size() {
 		return mSize;
@@ -93,5 +96,28 @@ public class ArrayList<E> {
 			
 			mElemments = newArray;
 		}
+	}
+
+	@Override
+	public Iterator<E> iterator() {
+		return new Iterator<E>() {
+
+			private int index = 0;
+			private final int size = mSize;
+			@Override
+			public boolean hasNext() {
+				return index<size;
+			}
+
+			@Override
+			public E next() {
+				return mElemments[index++];
+			}
+
+			@Override
+			public void remove() {
+				throw new RuntimeException("Operation not supported");
+			}
+		};
 	}
 }
