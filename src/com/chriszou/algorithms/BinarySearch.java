@@ -1,10 +1,12 @@
 package com.chriszou.algorithms;
 
+import static com.chriszou.algorithms.utils.Print.println;
+
 import java.util.Arrays;
 
+import com.chriszou.algorithms.stdlib.In;
 import com.chriszou.algorithms.stdlib.StdIn;
 import com.chriszou.algorithms.stdlib.StdOut;
-import static com.chriszou.algorithms.Print.*;
 
 /**
  * A Binary Search Java implementation

@@ -1,4 +1,4 @@
-package com.chriszou.algorithms;
+package com.chriszou.algorithms.datastructure;
 
 import java.util.Iterator;
 
