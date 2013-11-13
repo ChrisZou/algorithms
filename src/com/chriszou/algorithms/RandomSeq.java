@@ -4,6 +4,11 @@ import com.chriszou.algorithms.stdlib.StdRandom;
 import static com.chriszou.algorithms.utils.Print.*;
 /**
  * A random seq implementation with reference to Algs4
+ *  Compilation:  javac RandomSeq.java
+ *  Execution:    java RandomSeq N lo hi
+ *
+ *  Prints N numbers between lo and hi.
+ *  
  * @author Chris
  *
  */

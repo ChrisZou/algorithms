@@ -3,6 +3,12 @@ package com.chriszou.algorithms;
 import com.chriszou.algorithms.stdlib.StdIn;
 import com.chriszou.algorithms.stdlib.StdOut;
 
+/**
+ * 
+ * Reads in a sequence of real numbers, and computes their average.
+ * @author Chris
+ *
+ */
 public class Average {
 	public static void main(String[] args){
 		int count = 0;
