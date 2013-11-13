@@ -1,15 +1,13 @@
 package com.chriszou.algorithms;
 
 import static com.chriszou.algorithms.utils.Print.println;
-
 import java.util.Arrays;
-
 import com.chriszou.algorithms.stdlib.In;
 import com.chriszou.algorithms.stdlib.StdIn;
 import com.chriszou.algorithms.stdlib.StdOut;
 
 /**
- * A Binary Search Java implementation
+ * A Binary Search Java implementation with reference to Algs4
  * 
  * @author Chris
  * 

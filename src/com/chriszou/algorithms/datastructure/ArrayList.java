@@ -2,8 +2,6 @@ package com.chriszou.algorithms.datastructure;
 
 import java.util.Iterator;
 
-import javax.naming.OperationNotSupportedException;
-
 public class ArrayList<E> implements Iterable<E> {
 
 	/**
@@ -17,6 +15,7 @@ public class ArrayList<E> implements Iterable<E> {
 	 */
 	private int mSize;
 	
+	@SuppressWarnings("unchecked")
 	public ArrayList() {
 		mElemments = (E[]) new Object[DEFAULT_SIZE];
 		mSize = 0;
